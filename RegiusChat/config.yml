@@ -1,0 +1,34 @@
+# Configuration for RegiusChat by DenialMC
+# reloadMessage: The message players see after reloading the plugin
+# noPermMessage: The message players see after trying to reload the plugin without permission
+# messageHelpMessage: The message players see after failing to send a message
+# messageMessage: The message players see after sending a message
+# messagedMessage: The message players see when getting messaged
+# notOnlineMessage: The message players see when they message an offline player
+# replyHelpMessage: The message players see when they reply without a message
+# cantReplyMessage: The message players see when they dont have anybody to reply to
+# colorHelpMessage: The message players see after setting an unexistent color
+# colorMessage: The message players see after setting their chat color
+# notValidMessage: The message players see after they set their chat color to an unvalid option
+# consoleMessage: The message sent to console when it tries to execute a player-only command
+# defaultChatColor: The default chatcolor for players
+# formats: The chat formats
+
+general:
+  reloadMessage: '&eSuccesfully reloaded RegiusChat!'
+  noPermMessage: '&4You do not have access to that command.'
+  messageHelpMessage: '&eUsage: &6/msg [player] [message]&e.'
+  messageMessage: '&6[you -> <receiver>] &e<message>'
+  messagedMessage: '&6[<sender> -> you] &e<message>'
+  notOnlineMessage: '&eSorry, but &6<player> &eis not online!'
+  replyHelpMessage: '&eUsage: &66/reply [message]&e.'
+  cantReplyMessage: '&eSorry, but you don''t have anybody to reply to!'
+  colorHelpMessage: '&eUsage: &6/color [color]&e.'
+  colorMessage: '&eYou have set your chat color!'
+  notValidMessage: '&eSorry, but you haven''t given a valid chat color. Valid options: &0black, &1darkblue, &2darkgreen, &3darkaqua, &4darkred, &5darkpurple, &6gold, &7gray, &8darkgray, &9blue, &agreen, &baqua, &cred, &dlightpurple, &eyellow, &fwhite&e.'
+  consoleMessage: 'Sorry, but you can''t execute this command.'
+settings:
+  defaultChatColor: WHITE
+  formats:
+    default: '&f[&b<player>&f] <message>'
+    admin: '&4[&c<player>&4] <message>'

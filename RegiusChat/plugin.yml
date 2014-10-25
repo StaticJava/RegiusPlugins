@@ -1,0 +1,56 @@
+name: RegiusChat
+version: 1.0
+description: This plugin adds a message system. Developed for Regius Raids.
+main: org.salvagecraft.RegiusChat.RegiusChat
+depend: [Vault]
+author: DenialMC
+commands:
+  regiuschat:
+    description: Allows you to reload the plugin
+    permission: regiuschat.help
+    usage: "Usage: /regiuschat [help/reload]"
+  msg:
+    description: Message a player
+    aliases: [tell, t, m, whisper, emsg, etell, ewhisper]
+    permission: regiuschat.msg
+    usage: "Usage: /msg [player] [message]"
+  reply:
+    description: Reply to a player
+    aliases: [r, er, ereply]
+    permission: regiuschat.reply
+    usage: "Usage: /reply [message]"
+  color:
+    description: Set your chat color
+    permission: regiuschat.color
+    usage: "Usage: /color [chatcolor]"
+  ignore:
+    description: Ignore other players.
+permissions:
+  regiuschat.*:
+    description: Gives access to all RegiusChat permissions.
+    default: op
+    children:
+      regiuschat.help: true
+      regiuschat.reload: true
+      regiuschat.msg: true
+      regiuschat.reply: true
+      regiuschat.color: true
+      regiuschat.usecolors: true
+  regiuschat.help:
+    description: Allows you to get command help.
+    default: op
+  regiuschat.reload:
+    description: Allows you to reload the plugin
+    default: op
+  regiuschat.msg:
+    description: Allows you to message a player
+    default: true
+  regiuschat.reply:
+    description: Allows you to reply to a player
+    default: true
+  regiuschat.color:
+    description: Allows you to set your chat color
+    default: op
+  regiuschat.usecolors:
+    description: Allows you to use colors
+    default: op

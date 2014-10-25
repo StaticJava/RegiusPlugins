@@ -1,0 +1,8 @@
+name: RegiusCrates
+main: me.Thungknocker.RegiusCrates.RegiusCrates
+version: 1.0
+description: RegiusCrates gives players crates for rewards.
+commands:
+  crate:
+    description: Shows info about RegiusCrates.
+    aliases: [crates, regiuscrates]

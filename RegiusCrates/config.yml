@@ -1,0 +1,74 @@
+Messages:
+  defaultborder: '&6*&8--------------------------------------&6*'
+  defaultmessage1: '&6You have &e{amount} &6RegiusCrates left.'
+  defaultmessage2: '&6Type &e/crate open &6to open a crate.'
+  defaultmessage3: '&6Type &c/crate rewards &6to view the rewards.'
+  defaultmessage4: '&6Type &b/donate &6to donate for more crates.'
+  rewardmessage: '&6You have opened a crate and won the following rewards:'
+  nocrates: '&6You do not have crates, donate for more at &b/donate&6.'
+  receivecrates: '&6You received &e{amount} &cRegius&7Crate(s).'
+  rewardsborder: '&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c=&e=&c='
+Rewards:
+  '1': '&8[&e1/1&8] &7Chance to win &e$2500'
+  '2': '&8[&e1/10&8] &7Chance to win &e$7500 &7and &e6000 exp'
+  '3': '&8[&e1/25&8] &7Chance to win a &eRegius Sword'
+  '4': '&8[&e1/50&8] &7Chance to win &e$25 RRTokens &7and &e25 mcMMO credits'
+  '5': '&8[&e1/100&8] &7Chance to win a &eKit Lucky'
+  '6': '&8[&e1/150&8] &7Chance to win &e$50 RRTokens &7and &e50 mcMMO credits'
+  '7': '&8[&e1/175&8] &7Chance to win &e3 RegiusCrates'
+  '8': '&8[&e1/250&8] &7Chance to win &e2 Creeper Eggs'
+  '9': '&8[&e1/375&8] &7Chance to win a &eKit Regius'
+  '10': '&8[&e1/500&8] &7Chance to win &e2 God Apples'
+  '11': '&8[&e1/1000&8] &7Chance to win &e150 RRTokens &7and &e150 mcMMO credits'
+Prizes:
+  '1':
+    playermessage: '&6Money: &e$2,500!'
+    commands:
+    - /eco give {username} 2500
+  '10':
+    playermessage: '&6Money: &e$7,500 &6EXP: &e6,000!'
+    commands:
+    - /exp give {username} 6000
+    - /eco give {username} 7500
+  '25':
+    playermessage: '&6Weapon: &4&lRegius Sword'
+    commands:
+    - /give {username} 276 1 sharpness:5 fireaspect:2 name:&4&lRegius_Sword
+  '50':
+    playermessage: '&6Currencies: &a25 &cRR&7Tokens &6| &e25 &6mcMMO Credits'
+    commands:
+    - /token give {username} 25
+    - /addcredits {username} 25
+  '100':
+    playermessage: '&6Armor: &cKit Lucky'
+    commands:
+    - /give {username} 310 1 0:3
+    - /give {username} 311 1 0:3
+    - /give {username} 312 1 0:3
+    - /give {username} 313 1 0:3
+  '150':
+    playermessage: '&6Currencies: &a50 &cRR&7Tokens &6| &e50 &6mcMMO Credits'
+    commands:
+    - /addcredits {username} 50
+    - /token give {username} 50
+  '175':
+    playermessage: '&6Crates: &a3 &cRegius&7Crates'
+    commands:
+    - /crate give {username} 3
+  '250':
+    playermessage: '&6Item: &62 &aCreeper Eggs'
+    commands:
+    - /give {username} 383:50 2
+  '375':
+    playermessage: '&6Armor: &e&lKit Regius'
+    commands:
+    - /kit regius {username}
+  '500':
+    playermessage: '&6Items: &a2 &e&lGod Apples'
+    commands:
+    - /give {username} 322:1 2
+  '1000':
+    playermessage: '&6Currencies: &a150 &cRR&7Tokens &6| &e150 &6mcMMO Credits'
+    commands:
+    - /addcredits {username} 150
+    - /token give {username} 150
